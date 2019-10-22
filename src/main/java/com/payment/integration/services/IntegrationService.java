@@ -1,17 +1,19 @@
 package com.payment.integration.services;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 
 import java.util.Arrays;
 
-public abstract class IntegrationService {
+@Configuration
+public class IntegrationService {
 
-    @Value( "${braspag.merchant.id}" )
+    @Value("${braspag.merchant.id}")
     private String merchatId;
 
-    @Value( "${braspag.cartaoprotegido.merchant.id}" )
+    @Value("${braspag.cartaoprotegido.merchant.id}")
     private String merchatKey;
 
     public HttpHeaders getHeaders() {
