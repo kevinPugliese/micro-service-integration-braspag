@@ -1,21 +1,29 @@
 package com.payment.integration.facades;
 
-import com.payment.integration.dto.request.*;
-import com.payment.integration.dto.response.AuthorizationTransactionResponse;
+import com.payment.integration.services.dto.common.*;
+import com.payment.integration.services.dto.request.AuthorizeTransactionRequest;
+import com.payment.integration.services.dto.request.CreditCard;
+import com.payment.integration.services.dto.request.Payment;
+import com.payment.integration.services.dto.response.AuthorizationTransactionResponse;
+import com.payment.integration.services.dto.response.ResponseData;
+import com.payment.integration.controllers.dto.CartDTO;
 import com.payment.integration.services.BraspagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
-public class BraspagFacade {
+public class BraspagFacade implements BraspagFacadeInterface {
 
     @Autowired
     private BraspagService braspagService;
 
-    public String authorization() {
+    @Override
+    public ResponseData authorization(final CartDTO cartDTO) {
         ResponseEntity<AuthorizationTransactionResponse> authorizationTransactionResponseResponseEntity = braspagService.creditCardAuthorization(getAuthorizeTransaction());
-        return authorizationTransactionResponseResponseEntity.toString();
+        ResponseData responseData = new ResponseData();
+        responseData.setMessage(authorizationTransactionResponseResponseEntity.toString());
+        return responseData;
     }
 
     private static AuthorizeTransactionRequest getAuthorizeTransaction() {
