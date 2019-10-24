@@ -1,6 +1,8 @@
 package com.payment.integration.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.payment.integration.dto.common.Credentials;
+import com.payment.integration.dto.common.ExtraDataCollection;
 
 import java.util.ArrayList;
 import java.util.List;

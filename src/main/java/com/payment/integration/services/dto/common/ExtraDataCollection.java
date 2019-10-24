@@ -1,4 +1,4 @@
-package com.payment.integration.dto.request;
+package com.payment.integration.dto.common;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

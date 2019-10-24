@@ -1,6 +1,7 @@
 package com.payment.integration.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.payment.integration.dto.common.Customer;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AuthorizeTransactionRequest {
