@@ -156,7 +156,7 @@ public class Payment {
                 ", 'authenticate':" + authenticate +
                 ", 'recurrent':" + recurrent +
                 ", 'softDescriptor':'" + softDescriptor + '\'' +
-                ", 'doSSplit':" + doSplit +
+                ", 'doSplit':" + doSplit +
                 ", " + creditCard +
                 ", " + credentials +
                 ", " + extraDataCollections +

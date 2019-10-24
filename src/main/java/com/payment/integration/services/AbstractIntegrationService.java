@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.Arrays;
 
 @Service
-public abstract class IntegrationService {
+public abstract class AbstractIntegrationService implements IntegrationServiceInterface {
 
     @Value("${braspag.merchant.id}")
     private String merchantId;

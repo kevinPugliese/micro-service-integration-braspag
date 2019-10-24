@@ -10,7 +10,7 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class DefaultBraspagServiceAbstract extends AbstractIntegrationService {
+public class BraspagService extends AbstractIntegrationService {
 
     @Override
     public ResponseEntity<AuthorizationTransactionResponse> creditCardAuthorization(AuthorizeTransactionRequest authorizeTransactionRequest) throws RestClientException {
