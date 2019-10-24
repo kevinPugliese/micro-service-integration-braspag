@@ -1,4 +1,4 @@
-package com.payment.integration.dto.request;
+package com.payment.integration.services.dto.request;
 
 import java.util.HashMap;
 import java.util.Map;

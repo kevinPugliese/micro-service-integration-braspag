@@ -1,7 +1,7 @@
 package com.payment.integration.services;
 
-import com.payment.integration.dto.request.AuthorizeTransactionRequest;
-import com.payment.integration.dto.response.AuthorizationTransactionResponse;
+import com.payment.integration.services.dto.request.AuthorizeTransactionRequest;
+import com.payment.integration.services.dto.response.AuthorizationTransactionResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestClientException;
 

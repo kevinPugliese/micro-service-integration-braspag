@@ -1,4 +1,4 @@
-package com.payment.integration.dto.response;
+package com.payment.integration.services.dto.response;
 
 public class ResponseData {
 

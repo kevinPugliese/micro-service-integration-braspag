@@ -1,4 +1,4 @@
-package com.payment.integration.dto.response;
+package com.payment.integration.services.dto.response;
 
 import java.util.HashMap;
 import java.util.Map;
